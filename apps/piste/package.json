@@ -33,6 +33,6 @@
     "npm-run-all": "^4.1.5",
     "storybook-config": "*",
     "tsconfig": "*",
-    "typescript": "^4.5.3"
+    "typescript": "^5.0.2"
   }
 }
