@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "run-p lint:ts lint:types",
+    "lint:fix": "npm run lint:ts -- --fix",
     "lint:ts": "next lint",
     "lint:types": "tsc --noEmit"
   },

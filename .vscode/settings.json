@@ -14,7 +14,8 @@
     "**/build": true,
     "**/coverage": true,
     "**/.next": true,
-    "**/.turbo": true
+    "**/.turbo": true,
+    "**/tsconfig.tsbuildinfo": true
   },
   "typescript.tsdk": ".\\node_modules\\typescript\\lib",
   "[javascript]": {
