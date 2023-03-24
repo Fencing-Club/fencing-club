@@ -20,7 +20,8 @@
   "dependencies": {
     "next": "^13.1.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@fluentui/react-components": "^9.18.6"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -32,7 +33,6 @@
     "eslint-config-piste": "*",
     "npm-run-all": "^4.1.5",
     "storybook-config": "*",
-    "tsconfig": "*",
-    "typescript": "^4.5.3"
+    "tsconfig": "*"
   }
 }

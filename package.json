@@ -24,7 +24,8 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
     "prettier": "latest",
-    "turbo": "latest"
+    "turbo": "latest",
+    "typescript": "^5.0.2"
   },
   "packageManager": "npm@8.19.3"
 }
