@@ -2,6 +2,10 @@
   "name": "piste-repo",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
   "workspaces": [
     "apps/*",
     "packages/*"
@@ -12,14 +16,11 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
+  "dependencies": {},
   "devDependencies": {
     "eslint-config-piste": "*",
     "prettier": "latest",
     "turbo": "latest"
   },
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "dependencies": {},
   "packageManager": "npm@8.19.3"
 }
