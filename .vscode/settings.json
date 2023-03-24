@@ -16,7 +16,8 @@
     "**/.next": true,
     "**/.turbo": true,
     "**/tsconfig.tsbuildinfo": true,
-    "**/storybook-static": true
+    "**/storybook-static": true,
+    "**/build-storybook.log": true
   },
   "typescript.tsdk": ".\\node_modules\\typescript\\lib",
   "[javascript]": {
