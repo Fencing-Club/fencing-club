@@ -9,7 +9,9 @@
     "lint": "run-p lint:ts lint:types",
     "lint:fix": "npm run lint:ts -- --fix",
     "lint:ts": "next lint",
-    "lint:types": "tsc --noEmit"
+    "lint:types": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "storybook build"
   },
   "dependencies": {
     "next": "^13.1.1",
@@ -24,6 +26,7 @@
     "eslint": "8.36.0",
     "eslint-config-piste": "*",
     "npm-run-all": "^4.1.5",
+    "storybook-config": "*",
     "tsconfig": "*",
     "typescript": "^4.5.3"
   }

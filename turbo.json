@@ -6,13 +6,20 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
     },
-    "lint": {},
-    "lint:fix": {},
+    "lint": {
+      "outputs": []
+    },
+    "lint:fix": {
+      "cache": false
+    },
     "dev": {
       "cache": false
     },
     "test": {
       "outputs": []
+    },
+    "storybook:build": {
+      "outputs": ["storybook-static/**"]
     }
   }
 }

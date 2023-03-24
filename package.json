@@ -16,6 +16,7 @@
     "test": "turbo run test",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
+    "storybook:build": "turbo run storybook:build",
     "prepare": "husky install"
   },
   "devDependencies": {

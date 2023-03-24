@@ -32,6 +32,16 @@ yarn-error.log*
 # turbo
 .turbo
 
+# Playwright E2E generated files
+/playwright-report/
+/playwright/.cache/
+/test-results
+
 # typescript
 tsconfig.tsbuildinfo
 **/tsconfig.tsbuildinfo
+**/storybook-static
+
+# Storybook generated files
+**/storybook-static
+build-storybook.log

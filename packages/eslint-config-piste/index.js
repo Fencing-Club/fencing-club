@@ -5,6 +5,7 @@ module.exports = {
     "plugin:security/recommended",
     "plugin:@microsoft/sdl/required",
     //"plugin:jest/recommended",
+    "plugin:storybook/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
