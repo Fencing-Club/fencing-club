@@ -14,12 +14,6 @@
     },
     "dev": {
       "cache": false
-    },
-    "test": {
-      "outputs": []
-    },
-    "storybook:build": {
-      "outputs": ["storybook-static/**"]
     }
   }
 }
