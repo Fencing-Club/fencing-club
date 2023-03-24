@@ -1,5 +1,14 @@
 module.exports = {
-  extends: ["next", "turbo", "prettier"],
+  extends: [
+    "next",
+    "turbo",
+    "plugin:security/recommended",
+    "plugin:@microsoft/sdl/required",
+    //"plugin:jest/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+  ],
   plugins: ["prettier"],
   parserOptions: {
     babelOptions: {

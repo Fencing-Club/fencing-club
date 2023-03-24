@@ -33,4 +33,5 @@ yarn-error.log*
 .turbo
 
 # typescript
+tsconfig.tsbuildinfo
 **/tsconfig.tsbuildinfo
