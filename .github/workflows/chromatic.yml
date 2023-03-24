@@ -15,4 +15,6 @@ jobs:
         uses: chromaui/action@v1
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          buildScriptName: cd apps\piste && storybook:build
+          buildScriptName: storybook:build
+          workingDir: ./apps/piste
+          exitZeroOnChanges: true
