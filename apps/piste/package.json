@@ -15,8 +15,7 @@
     "lint:ts": "next lint",
     "lint:types": "tsc --noEmit",
     "storybook": "storybook dev -p 6006",
-    "storybook:build": "storybook build",
-    "chromatic": "npx chromatic --project-token=a68642fbfa77 --build-script-name storybook:build"
+    "storybook:build": "storybook build"
   },
   "dependencies": {
     "next": "^13.1.1",
