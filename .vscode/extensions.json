@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "Orta.vscode-jest",
+    "ms-playwright.playwright",
+    "eamodio.gitlens",
+    "formulahendry.auto-rename-tag",
+    "GitHub.copilot",
+    "oderwat.indent-rainbow",
+    "christian-kohler.npm-intellisense",
+    "herrmannplatz.npm-dependency-links",
+    "GraphQL.vscode-graphql",
+    "GraphQL.vscode-graphql-syntax"
+  ]
+}
