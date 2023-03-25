@@ -16,7 +16,7 @@ export const preview: Preview = {
   decorators: [
     // Add some spacing so screenshots don't cut off shadows/edges
     (Story) => (
-      <div style={{ margin: "0.2em" }}>
+      <div style={{ margin: "0.1em", padding: "0.1em" }}>
         <Story />
       </div>
     ),
