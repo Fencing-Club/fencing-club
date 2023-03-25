@@ -13,5 +13,12 @@ export const preview: Preview = {
       current: "ligth",
     },
   },
-  decorators: [],
+  decorators: [
+    // Add some spacing so screenshots don't cut off shadows/edges
+    (Story) => (
+      <div style={{ margin: "0.2em" }}>
+        <Story />
+      </div>
+    ),
+  ],
 }
