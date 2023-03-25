@@ -1,8 +1,16 @@
 {
-  "compilerOptions": {
-    "jsx": "preserve"
-  },
   "extends": "tsconfig/nextjs.json",
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "paths": {
+      "$components/*": ["components/*"],
+      "$hooks/*": ["hooks/*"],
+      "$models/*": ["models/*"],
+      "$store/*": ["store/*"],
+      "$services/*": ["services/*"]
+    }
+  }
 }
