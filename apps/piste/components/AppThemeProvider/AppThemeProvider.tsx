@@ -1,13 +1,11 @@
-import { useMemo, useState } from "react"
-import { webLightTheme, webDarkTheme, FluentProvider } from "@fluentui/react-components"
+import { useEffect, useMemo } from "react"
+import { FluentProvider } from "@fluentui/react-components"
 
 import { AppTheme } from "./AppThemeProvider.types"
 import { AppThemeContext, IAppThemeContextValue } from "./AppThemeProvider.context"
 import { ThemeProvider } from "styled-components"
 import { GlobalStyles } from "./components/GlobalStyles"
-
-const lightTheme = webLightTheme
-const darkTheme = webDarkTheme
+import { useThemeReducer } from "./useThemeReducer"
 
 type AppThemeProviderProps = {
   children: React.ReactNode
@@ -15,34 +13,34 @@ type AppThemeProviderProps = {
 
 export function AppThemeProvider({ children }: AppThemeProviderProps) {
   const urlParams = new URLSearchParams(window.location.search)
-  const defaultTheme: AppTheme = (urlParams.get("theme") as AppTheme) || "light"
+  const defaultTheme = (urlParams.get("theme") || "light") as AppTheme
 
-  const [themeName, setTheme] = useState<AppTheme>(defaultTheme)
+  const [{ theme, name }, setTheme] = useThemeReducer(defaultTheme)
+
+  // Update the background color of the page to match the theme
+  useEffect(() => {
+    const body = document.getElementsByTagName("body")?.[0]
+    if (body) {
+      body.style.backgroundColor = theme.colorNeutralBackground1
+    }
+  }, [theme])
 
   const value: IAppThemeContextValue = useMemo(() => {
-    let theme = lightTheme
-    switch (themeName) {
-      case "dark":
-        theme = darkTheme
-      case "light":
-      default:
-    }
-
     return {
       theme,
-      themeName,
+      themeName: name,
       setTheme,
     }
-  }, [themeName])
+  }, [theme, name, setTheme])
 
   return (
-    <div>
+    <>
       <GlobalStyles />
       <AppThemeContext.Provider value={value}>
         <FluentProvider theme={value.theme}>
           <ThemeProvider theme={value.theme}>{children}</ThemeProvider>
         </FluentProvider>
       </AppThemeContext.Provider>
-    </div>
+    </>
   )
 }

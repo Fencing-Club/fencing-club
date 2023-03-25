@@ -1,21 +1,16 @@
 import { preview as sharedPreview } from "storybook-config"
 import type { Preview } from "@storybook/react"
-import React from "react"
-
-import { AppThemeProvider } from "../components/AppThemeProvider"
+import { withThemeProvider, themeGlobalType } from "./withThemeProvider"
 
 const sharedDecorators = sharedPreview.decorators || []
 
 const preview: Preview = {
   ...sharedPreview,
-  decorators: [
-    ...sharedDecorators,
-    (Story) => (
-      <AppThemeProvider>
-        <Story />
-      </AppThemeProvider>
-    ),
-  ],
+  decorators: [...sharedDecorators, withThemeProvider],
+  globalTypes: {
+    ...sharedPreview.globalTypes,
+    ...themeGlobalType,
+  },
 }
 
 export default preview

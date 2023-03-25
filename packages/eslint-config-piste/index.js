@@ -20,5 +20,6 @@ module.exports = {
     "prettier/prettier": "error",
     "@next/next/no-html-link-for-pages": "off",
     "@typescript-eslint/no-var-requires": "off",
+    "security/detect-object-injection": "off",
   },
 }

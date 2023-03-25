@@ -9,6 +9,7 @@ export const main: StorybookConfig = {
     "@storybook/addon-a11y",
     "@storybook/addon-storysource",
     "storybook-addon-performance",
+    "storybook-dark-mode",
   ],
   framework: {
     name: "@storybook/nextjs",

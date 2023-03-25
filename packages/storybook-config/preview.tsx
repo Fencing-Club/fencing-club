@@ -9,6 +9,9 @@ export const preview: Preview = {
         date: /Date$/,
       },
     },
+    darkMode: {
+      current: "ligth",
+    },
   },
   decorators: [],
 }
