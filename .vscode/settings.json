@@ -1,12 +1,16 @@
 {
   "debug.internalConsoleOptions": "neverOpen",
+  "editor.rulers": [140],
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
-  "editor.formatOnSave": true,
   "editor.insertSpaces": true,
   "editor.renderWhitespace": "all",
-  "editor.rulers": [140],
   "files.trimTrailingWhitespace": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
   "files.exclude": {
     "**/.git": true,
     "**/dist": true,
@@ -19,30 +23,5 @@
     "**/storybook-static": true,
     "**/build-storybook.log": true
   },
-  "typescript.tsdk": ".\\node_modules\\typescript\\lib",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "eslint.validate": [
-    "javascript",
-    "typescript",
-    "javascriptreact",
-    "typescriptreact"
-  ]
+  "typescript.tsdk": ".\\node_modules\\typescript\\lib"
 }
