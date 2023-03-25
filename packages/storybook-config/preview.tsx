@@ -10,4 +10,5 @@ export const preview: Preview = {
       },
     },
   },
+  decorators: [],
 }

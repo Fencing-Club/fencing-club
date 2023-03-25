@@ -1,9 +1,10 @@
-import React, { useMemo, useState } from "react"
+import { useMemo, useState } from "react"
 import { webLightTheme, webDarkTheme, FluentProvider } from "@fluentui/react-components"
 
 import { AppTheme } from "./AppThemeProvider.types"
 import { AppThemeContext, IAppThemeContextValue } from "./AppThemeProvider.context"
 import { ThemeProvider } from "styled-components"
+import { GlobalStyles } from "./components/GlobalStyles"
 
 const lightTheme = webLightTheme
 const darkTheme = webDarkTheme
@@ -13,9 +14,8 @@ type AppThemeProviderProps = {
 }
 
 export function AppThemeProvider({ children }: AppThemeProviderProps) {
-  // const [params] = useSearchParams()
-  // const defaultTheme = (params.get("theme") as AppTheme) ?? "light"
-  const defaultTheme: AppTheme = "light"
+  const urlParams = new URLSearchParams(window.location.search)
+  const defaultTheme: AppTheme = (urlParams.get("theme") as AppTheme) || "light"
 
   const [themeName, setTheme] = useState<AppTheme>(defaultTheme)
 
@@ -36,10 +36,13 @@ export function AppThemeProvider({ children }: AppThemeProviderProps) {
   }, [themeName])
 
   return (
-    <AppThemeContext.Provider value={value}>
-      <FluentProvider theme={value.theme}>
-        <ThemeProvider theme={value.theme}>{children}</ThemeProvider>
-      </FluentProvider>
-    </AppThemeContext.Provider>
+    <div>
+      <GlobalStyles />
+      <AppThemeContext.Provider value={value}>
+        <FluentProvider theme={value.theme}>
+          <ThemeProvider theme={value.theme}>{children}</ThemeProvider>
+        </FluentProvider>
+      </AppThemeContext.Provider>
+    </div>
   )
 }
