@@ -8,7 +8,7 @@ module.exports = {
     "plugin:storybook/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier",
+    "plugin:prettier/recommended",
   ],
   plugins: ["prettier"],
   parserOptions: {
@@ -19,5 +19,7 @@ module.exports = {
   rules: {
     "prettier/prettier": "error",
     "@next/next/no-html-link-for-pages": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "security/detect-object-injection": "off",
   },
 }

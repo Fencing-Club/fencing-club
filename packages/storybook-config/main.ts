@@ -6,10 +6,10 @@ export const main: StorybookConfig = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    "@storybook/addon-storyshots",
     "@storybook/addon-a11y",
     "@storybook/addon-storysource",
     "storybook-addon-performance",
+    "storybook-dark-mode",
   ],
   framework: {
     name: "@storybook/nextjs",

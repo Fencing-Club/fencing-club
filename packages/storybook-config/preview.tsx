@@ -9,5 +9,16 @@ export const preview: Preview = {
         date: /Date$/,
       },
     },
+    darkMode: {
+      current: "ligth",
+    },
   },
+  decorators: [
+    // Add some spacing so screenshots don't cut off shadows/edges
+    (Story) => (
+      <div style={{ padding: "0.2em" }}>
+        <Story />
+      </div>
+    ),
+  ],
 }

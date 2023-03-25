@@ -9,9 +9,5 @@ export default function Web() {
     }
   }, [myVal])
 
-  return (
-    <div>
-      <h1>Web</h1>
-    </div>
-  )
+  return <h1>Web</h1>
 }
