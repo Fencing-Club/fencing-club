@@ -4,6 +4,13 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
+      "env": [
+        "NEXT_PUBLIC_APP_CONFIG_ACCESS_ID",
+        "NEXT_PUBLIC_APP_CONFIG_SECRET_ACCESS_KEY",
+        "NEXT_PUBLIC_APP_CONFIG_APPID",
+        "NEXT_PUBLIC_APP_CONFIG_ENVID",
+        "NEXT_PUBLIC_APP_CONFIG_CONFIGID"
+      ],
       "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
     },
     "lint": {
@@ -13,9 +20,6 @@
       "cache": false
     },
     "dev": {
-      "cache": false
-    },
-    "install": {
       "cache": false
     }
   }
