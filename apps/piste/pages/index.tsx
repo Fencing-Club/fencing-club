@@ -1,13 +1,27 @@
-import { useState, useEffect } from "react"
+import { useFeatureFlag } from "$services/appConfigClient"
 
 export default function Web() {
-  const [myVal, setMyVal] = useState<string>("true")
+  return (
+    <div>
+      <h1>AWS AppConfig Example</h1>
+      <ChallengeEnabled />
+      <SecondFlag />
+    </div>
+  )
+}
 
-  useEffect(() => {
-    if (myVal === "true") {
-      setMyVal("false")
-    }
-  }, [myVal])
+function ChallengeEnabled() {
+  const isChallengeEnabled = useFeatureFlag("isChallengeEnabled")
 
-  return <h1>Web</h1>
+  console.log("RE_RENDERED", "isChallengeEnabled: ", isChallengeEnabled)
+
+  return <div>isChallengeEnabled: {new String(isChallengeEnabled)}</div>
+}
+
+function SecondFlag() {
+  const secondFlag = useFeatureFlag("secondFlag")
+
+  console.log("RE_RENDERED", "secondFlag: ", secondFlag)
+
+  return <div>secondFlag: {new String(secondFlag)}</div>
 }

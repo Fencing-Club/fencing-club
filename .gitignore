@@ -40,8 +40,9 @@ yarn-error.log*
 # typescript
 tsconfig.tsbuildinfo
 **/tsconfig.tsbuildinfo
-**/storybook-static
+**/dist
 
 # Storybook generated files
 **/storybook-static
 build-storybook.log
+**/storybook-static
