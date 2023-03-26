@@ -20,7 +20,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "eslint-config-piste": "*",
+    "@piste/eslint-config": "*",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
     "prettier": "latest",
