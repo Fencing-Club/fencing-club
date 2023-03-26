@@ -18,6 +18,7 @@
     "storybook:build": "storybook build"
   },
   "dependencies": {
+    "@piste/app-config": "*",
     "@aws-sdk/client-appconfigdata": "^3.299.0",
     "@fluentui/react-components": "^9.18.6",
     "@fluentui/react-icons": "^2.0.198",
@@ -36,10 +37,9 @@
     "@types/styled-components": "^5.1.26",
     "chromatic": "^6.17.2",
     "eslint": "8.36.0",
-    "eslint-config-piste": "*",
+    "@piste/eslint-config": "*",
     "npm-run-all": "^4.1.5",
     "storybook-config": "*",
-    "tsconfig": "*",
-    "app-config-react": "*"
+    "@piste/tsconfig": "*"
   }
 }

@@ -1,4 +1,4 @@
-import { createAppConfigClient } from "app-config-react"
+import { createAppConfigClient } from "@piste/app-config"
 
 type FeatureFlags = {
   isChallengeEnabled: boolean

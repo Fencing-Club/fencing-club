@@ -3,7 +3,7 @@
     "jsx": "preserve",
     "outDir": "dist"
   },
-  "extends": "tsconfig/react-library.json",
+  "extends": "@piste/tsconfig/react-library.json",
   "include": ["src"],
   "exclude": ["dist", "node_modules"]
 }

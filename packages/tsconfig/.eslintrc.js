@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ["piste"],
+  extends: ["@piste/eslint-config"],
 }

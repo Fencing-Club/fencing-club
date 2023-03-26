@@ -9,7 +9,7 @@ This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It inclu
 ### Apps and Packages
 
 - `web`: another [Next.js](https://nextjs.org/) app
-- `eslint-config-piste`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `@piste/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).

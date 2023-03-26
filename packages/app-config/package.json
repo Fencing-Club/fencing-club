@@ -1,8 +1,8 @@
 {
-  "name": "app-config-react",
+  "name": "@piste/app-config",
   "version": "0.0.0",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
   "files": [
     "dist/**",
     "src/**"
@@ -25,9 +25,9 @@
     "@aws-sdk/client-appconfigdata": "3.299.0",
     "@types/node": "^17.0.12",
     "eslint": "8.36.0",
-    "eslint-config-piste": "*",
+    "@piste/eslint-config": "*",
     "npm-run-all": "^4.1.5",
-    "tsconfig": "*",
+    "@piste/tsconfig": "*",
     "@types/use-sync-external-store": "^0.0.3"
   }
 }
