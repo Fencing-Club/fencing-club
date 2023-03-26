@@ -13,8 +13,8 @@ export const client = createAppConfigClient({
   config: {
     region: "us-east-2",
     credentials: {
-      accessKeyId: process.env.NEXT_PUBLIC_APP_CONFIG_ACCESS_ID,
-      secretAccessKey: process.env.NEXT_PUBLIC_APP_CONFIG_SECRET_ACCESS_KEY,
+      accessKeyId: process.env.NEXT_PUBLIC_APP_CONFIG_ACCESS_ID ?? "",
+      secretAccessKey: process.env.NEXT_PUBLIC_APP_CONFIG_SECRET_ACCESS_KEY ?? "",
     },
   },
   params: {

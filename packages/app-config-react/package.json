@@ -12,7 +12,7 @@
     "build": "tsc",
     "lint": "run-p lint:ts lint:types",
     "lint:fix": "npm run lint:ts -- --fix",
-    "lint:ts": "eslint --ext .ts,.tsx .",
+    "lint:ts": "eslint --ext .ts,.tsx src",
     "lint:types": "tsc --noEmit"
   },
   "dependencies": {
