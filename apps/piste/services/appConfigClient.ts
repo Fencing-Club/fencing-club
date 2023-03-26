@@ -19,8 +19,8 @@ export const client = createAppConfigClient({
   },
   params: {
     ApplicationIdentifier: process.env.NEXT_PUBLIC_APP_CONFIG_APPID,
-    ConfigurationProfileIdentifier: process.env.NEXT_PUBLIC_APP_CONFIG_ENVID,
-    EnvironmentIdentifier: process.env.NEXT_PUBLIC_APP_CONFIG_CONFIGID,
+    ConfigurationProfileIdentifier: process.env.NEXT_PUBLIC_APP_CONFIG_CONFIGID,
+    EnvironmentIdentifier: process.env.NEXT_PUBLIC_APP_CONFIG_ENVID,
   },
   defaultFlags,
 })
